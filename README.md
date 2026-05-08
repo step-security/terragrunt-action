@@ -24,6 +24,9 @@ Supported GitHub action inputs:
 | tg_output_capture | Capture Terragrunt execution output, enabled by default. Set to `0` for very large outputs | `false`                                                                     | 0/1                 |
 | github_token      | GitHub token for API authentication to avoid rate limits                                   | `false`                                                                     | ${{ github.token }} |
 
+> [!WARNING]
+> When `tg_comment` is set to `1`, the full terragrunt execution output is posted as a PR comment visible to everyone with repository read access. Avoid enabling this for commands that may print sensitive values — for example, `terragrunt output` (which dumps state outputs) or `plan` runs involving `sensitive()` variables. In public repositories, this output is visible to all GitHub users.
+
 ## Tool Version Management
 
 This action supports two ways to specify tool versions:
