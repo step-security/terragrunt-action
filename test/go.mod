@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terragrunt-action
+module github.com/step-security/terragrunt-action
 
 go 1.24.4
 
