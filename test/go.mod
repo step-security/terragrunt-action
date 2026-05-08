@@ -1,10 +1,10 @@
 module github.com/step-security/terragrunt-action
 
-go 1.24.4
+go 1.26
 
 require (
-	github.com/gruntwork-io/terratest v0.50.0
-	github.com/stretchr/testify v1.10.0
+	github.com/gruntwork-io/terratest v0.56.0
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
