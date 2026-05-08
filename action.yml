@@ -121,7 +121,7 @@ runs:
 
     - name: Install tools with mise (using mise.toml)
       if: steps.mise-check.outputs.mise_config_exists == 'true'
-      uses: step-security/mise-action@v4
+      uses: step-security/mise-action@c7396e2a2a4ad1ea43abee3317d964292da354ae # v4.0.1
       with:
         version: 2026.3.9
       env:
@@ -129,7 +129,7 @@ runs:
 
     - name: Install tools with mise (using input versions)
       if: steps.mise-check.outputs.mise_config_exists == 'false'
-      uses: step-security/mise-action@v4
+      uses: step-security/mise-action@c7396e2a2a4ad1ea43abee3317d964292da354ae # v4.0.1
       with:
         version: 2026.3.9
         tool_versions: |
